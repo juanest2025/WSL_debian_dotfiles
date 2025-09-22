@@ -1,0 +1,20 @@
+para instalar nvim, primero instala brew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+lugo añadelo al path:
+
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
+source ~/.zshrc
+
+luego instalalo desde brew: 
+brew install nvim
+
+y luego añadelo al path:
+
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+y luego instala nvchad:
+
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim

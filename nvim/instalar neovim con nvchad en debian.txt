@@ -1,0 +1,15 @@
+para instalar nvchd, lo primero es descomprimir esto: 
+
+git clone https://github.com/NvChad/starter ~/.config/nvim
+
+luego vamos a neovim y descagamos 
+nvim-linux-x86_64.tar.gz
+
+luego con tar descomprimimos el archivo:
+tar -xvzf nvim-linux-x86_64.tar.gz
+ y copiamos la carpeta al opt 
+
+y después agregamos el path al bashrc o zshrc
+ y ponerlo en el path
+
+

@@ -1,0 +1,27 @@
+pasos para realizar:
+
+1: descargar la herramienta para windows win32yank.exe en el siguiente enlace: https://github.com/equalsraf/win32yank/releases/tag/v0.1.1
+
+2. move el win32yank.exe al usr/local/bin y darle permiso de ejecucion con chmod +x win32yank.exe
+
+3. agregar las siguientes lineas al ~/.config/nvim/lua/custom/init.lua
+'
+vim.g.clipboard = {
+  name = "win32yank",
+  copy = {
+    ["+"] = "win32yank.exe -i --crlf",
+    ["*"] = "win32yank.exe -i --crlf",
+  },
+  paste = {
+    ["+"] = "win32yank.exe -o --lf",
+    ["*"] = "win32yank.exe -o --lf",
+  },
+  cache_enabled = false,
+}
+
+vim.opt.clipboard = "unnamedplus"
+vim.opt.fileformat = "unix"
+
+'
+
+

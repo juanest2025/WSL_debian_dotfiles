@@ -1,0 +1,7 @@
+primero ve al sitio https://zellij.dev/
+y luego dale en download for linux
+
+luego extraelo con tar -xvzf 
+
+y luego pasa el binario en usr/local/binario
+
