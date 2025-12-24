@@ -5,7 +5,10 @@ pasos para realizar:
 2. move el win32yank.exe al usr/local/bin y darle permiso de ejecucion con chmod +x win32yank.exe
 
 3. agregar las siguientes lineas al ~/.config/nvim/lua/custom/init.lua
+en lazyvim
 '
+
+
 vim.g.clipboard = {
   name = "win32yank",
   copy = {
